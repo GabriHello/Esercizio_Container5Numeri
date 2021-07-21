@@ -21,11 +21,11 @@ namespace ConsoleApp1
         public void InserisciElemento(string aus)
         {
             i++;
-            if (i == 5) i--;
+            if (i == 5) i--; //Evito eccezioni di i
 
-            if (trigger == 1)
+            if (trigger == 1) //Si attiva solo dopo che il container è stato riempito
             {
-
+                //I valori della stringa slittano indietro, il primo valore si perde, l'ultimo verrà rimpiazzato in fase di input
                 for (int j = 0; j < (Container.Length - 1); j++)
                 {
                     Container[j] = Container[j + 1];
@@ -33,11 +33,12 @@ namespace ConsoleApp1
 
             }
 
+            // INPUT
             el = (Console.ReadLine());
             Console.WriteLine("\n");
 
             
-            if (!int.TryParse(el, out Container[i])) { el = "0"; aus = "&"; }
+            if (!int.TryParse(el, out Container[i])) { el = "0"; aus = "&"; } //Prevengo eccezione del Parsing. (Non mi ricordavo come usare il try catch in questo momento)
             Container[i] = int.Parse(el);
 
             if (i == 4) trigger = 1; //Per controllare che il quinto valore sia stato inserito
@@ -49,24 +50,19 @@ namespace ConsoleApp1
         public void StampaContenuto()
         {
 
-            if (i == 4)
+            if (i == 4) //Dopo aver riempito il container, ad ogni nuova acquisizione, stampa tutto il container aggiornato
             {
-
                 foreach (int element in Container)
                 {
-                    Console.WriteLine(element);
+                    Console.Write(element + " ");
                 }
+
                 Console.WriteLine("\n\n");
             }
-            else
+          /*else
             {
                 Console.WriteLine($"Inserisci ancora {Container.Length - i -1} numeri per riempire il container");
-            }
-
-
-            /*Console.WriteLine(Container[i]);*/
-
-
+            }*/
         }
 
     }
