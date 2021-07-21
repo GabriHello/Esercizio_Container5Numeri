@@ -12,7 +12,7 @@ namespace ConsoleApp1
 
             IntContainer stampaContainer = new IntContainer();
 
-            string aus = "";
+            string aus = ""; //non so come prendere questo valore dalla classe
 
             while (aus != "$")
             {
