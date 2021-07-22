@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gabbo_1va0r8w\\.nuget\\packages\\": {}
+    "C:\\Users\\c-soft\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabbo_1va0r8w\\source\\repos\\GabriHello\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\c-soft\\source\\repos\\Esercizio_Container5Numeri\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\gabbo_1va0r8w\\source\\repos\\GabriHello\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\gabbo_1va0r8w\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabbo_1va0r8w\\source\\repos\\GabriHello\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\c-soft\\source\\repos\\Esercizio_Container5Numeri\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\c-soft\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\c-soft\\source\\repos\\Esercizio_Container5Numeri\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabbo_1va0r8w\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\c-soft\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

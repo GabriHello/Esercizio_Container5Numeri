@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp1
+namespace Contenitore
 {
     class Program
     {
@@ -19,7 +19,6 @@ namespace ConsoleApp1
                 stampaContainer.InserisciElemento(aus);
                 stampaContainer.StampaContenuto();
             }
-
 
 
         }

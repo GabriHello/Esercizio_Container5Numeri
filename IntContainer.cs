@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Contenitore
 {
     class IntContainer
     {
@@ -18,7 +18,7 @@ namespace ConsoleApp1
 
         }
 
-        public void InserisciElemento(string aus)
+        public string InserisciElemento(string aus)
         {
             i++;
             if (i == 5) i--; //Evito eccezioni di i
@@ -30,7 +30,6 @@ namespace ConsoleApp1
                 {
                     Container[j] = Container[j + 1];
                 }
-
             }
 
             // INPUT
@@ -38,14 +37,15 @@ namespace ConsoleApp1
             Console.WriteLine("\n");
 
             
-            if (!int.TryParse(el, out Container[i])) { el = "0"; aus = "&"; } //Prevengo eccezione del Parsing. (Non mi ricordavo come usare il try catch in questo momento)
+            if (!int.TryParse(el, out Container[i])) { el = "0"; this.aus = "&"; } //Prevengo eccezione del Parsing. (Non mi ricordavo come usare il try catch in questo momento)
             Container[i] = int.Parse(el);
 
             if (i == 4) trigger = 1; //Per controllare che il quinto valore sia stato inserito
 
+            this.aus = aus;
+            return aus;
+
         }
-
-
 
         public void StampaContenuto()
         {
